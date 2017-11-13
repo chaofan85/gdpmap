@@ -1,0 +1,282 @@
+body {
+  background: #efefef;
+}
+
+main {
+  width: 1130px;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 3px;
+  background: white;
+  margin-top: 40px;
+  box-shadow: 0 0 8px #474747;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.pin {
+  width: 80px;
+  position: absolute;
+  top: -15px;
+  left: 45%;
+}
+
+.notice {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin-left: 25px;
+}
+
+.slidecontainer {
+  width: 200px;
+  margin: auto;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 15px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 30px;
+    background: #4CAF50;
+    cursor: pointer;
+
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 30px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+path:hover {
+  cursor: pointer;
+}
+
+.country-info {
+  width: 300px;
+  min-height: 450px;
+  padding: 30px 15px;
+  box-sizing: border-box;
+}
+
+.tape {
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+.country-data {
+  width: 270px;
+  height: 280px;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  border-radius: 3px;
+  padding: 20px 30px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  color: #444;
+  background: #fdffbc;
+  transform: rotate(10deg);
+  box-shadow: -2px 2px 2px #606060;
+  position: relative;
+}
+
+.country-data h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.country-data p {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.country-data a {
+  text-decoration: none;
+  color: #0025ba;
+  font-size: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.year {
+  width: 100%;
+  height: 40px;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.5;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin: auto;
+}
+
+
+.data-year, .gdp span {
+  font-size: 18px;
+  margin-left: 0;
+}
+
+.wiki:hover {
+  cursor: pointer;
+}
+
+.legend {
+  width: 160px;
+  height: 220px;
+  font-family: 'Lato', sans-serif;
+  margin-left: 30px;
+  position: absolute;
+  top: 50%;
+  border: 1px solid grey;
+  box-shadow: -5px 5px 0 #565656;
+}
+
+.legend ul {
+  padding-left: 10px;
+}
+
+.legend li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.used-color {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.color1 {
+  background: #dbdd9b;
+}
+
+.color2 {
+  background: #9e8d5b;
+}
+
+.color3 {
+  background: #b3c691;
+}
+
+.color4 {
+  background: #518c00;
+}
+
+.color5 {
+  background: #ccc500;
+}
+
+.color6 {
+  background: orange;
+}
+
+.color7 {
+  background: #cecece;
+}
+
+.app-info {
+  width: 400px;
+  height: 180px;
+  position: absolute;
+  left: 25%;
+  bottom: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  width: 360px;
+  height: 50px;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+}
+
+.source {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.source a {
+  text-decoration: none;
+}
+
+.author {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.author a {
+  text-decoration: none;
+  color: #c66a00;
+}
+
+.icons {
+  width: 170px;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.icons div {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.icon1 {
+  background-image: url(images/github.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.icon2 {
+  background-image: url(images/linkedin.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.icon3 {
+  background-image: url(images/angellist.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.icon4 {
+  background-image: url(images/email.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

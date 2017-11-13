@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <section>
+        <img class="pin" src="images/pin.png" alt="">
+        <div id="container" style="position: relative; width: 800px; height: 400px;"></div>
+
+        <div class="country-info">
+          <p class="notice">Range of Years: 1960 to 2016</p>
+          <div class="slidecontainer">
+            <form class="year-input" action="index.html" method="post">
+              <input type="number" class="year" name="" value="2016">
+            </form>
+            <input class="slider" type="range" min="1960" max="2016" value="2016">
+          </div>
+
+          <div class="country-data">
+            <img class="tape" src="images/tape.png" alt="">
+            <h3 class="country"></h3>
+            <p class="data-year"></p>
+            <p class="gdp"><span></span></p>
+            <div class="wiki"></div>
+          </div>
+        </div>
+
+        <div class="legend">
+          <ul>
+            <li><span class="used-color color6"></span>&nbsp;&nbsp;>=5000B</li>
+            <li><span class="used-color color5"></span>&nbsp;&nbsp;1000B-4999B</li>
+            <li><span class="used-color color4"></span>&nbsp;&nbsp;100B-999B</li>
+            <li><span class="used-color color3"></span>&nbsp;&nbsp;10B-99B</li>
+            <li><span class="used-color color2"></span>&nbsp;&nbsp;1B-9B</li>
+            <li><span class="used-color color1"></span>&nbsp;&nbsp;<1B</li>
+            <li><span class="used-color color7"></span>&nbsp;&nbsp;No Record</li>
+            <li>Currency: Dollars</li>
+
+          </ul>
+        </div>
+
+        <div class="app-info">
+          <div class="title">GDP MAP</div>
+          <p class="source">
+            Data Source: <a href="http://www.worldbank.org/">World Bank</a>
+            &nbsp;| &nbsp;
+            <a href="https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information">API</a>
+          </p>
+          <div class="author">
+            <p>Created By: <a href="http://chaofan.live" target="_blank">Chao Fan</a></p>
+            <div class="icons">
+              <a href="https://github.com/chaofan85" target="_blank"><div class="icon1"></div></a>
+              <a href="https://www.linkedin.com/in/chaofan85/" target="_blank"><div class="icon2"></div></a>
+              <a href="https://angel.co/chao-fan-1" target="_blank"><div class="icon3"></div></a>
+              <a href="mailto:fanchao05@gmail.com" target="_blank"><div class="icon4"></div></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+    <script src="node_modules/d3/d3.min.js"></script>
+    <script src="node_modules/topojson/dist/topojson.min.js"></script>
+    <script src="node_modules/datamaps/dist/datamaps.world.hires.min.js"></script>
+    <script type="text/javascript" src="scripts/country_codes.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
